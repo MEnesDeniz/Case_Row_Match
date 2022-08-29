@@ -23,7 +23,7 @@ public class MoveableItem : Item
             {
                 mousePressed = false;
                 finalTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                if(Vector2.Distance(firstTouchPosition, finalTouchPosition) > 0.6f)
+                if(Vector2.Distance(firstTouchPosition, finalTouchPosition) > 0.3f)
                 {
                     CalculateAngle();
                     board.RowMatchFinder.FindMatches();
